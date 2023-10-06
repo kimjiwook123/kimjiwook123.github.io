@@ -118,27 +118,71 @@
         </dl>
         <style>
             th, td{
-                border: solid 20px rgb(124, 222, 103);
+                border: solid 20px rgb(255, 255, 255);
             }
         </style> <!-- CSS -->
 
-        <table>
-            <tr> <!-- 한줄 row 행 -->
-                <th rowspan="2">제목1</th> <!-- 제목 한칸  colum 열 -->
-                <th colspan="2">제목2</th>
-                <th>제목3</th>
+        <table summary="table기본">
+            <caption>table기본형태</caption>
+            <thead>
+                <tr> <!-- 한줄 row 행 -->
+                    <th scope="col" rowspan="2">제목1</th> <!-- 제목 한칸  colum 열 -->
+                    <th scope="col" colspan="2">제목2</th>
+                    <th scope="col"> 제목3</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>내용1</td> <!-- 내용 한칸 -->
+                <td>내용2</td>
+                <td>내용3</td>
             </tr>
             <tr>
                 <td>내용1</td> <!-- 내용 한칸 -->
                 <td>내용2</td>
                 <td>내용3</td>
             </tr>
+            <tbody>
+                <!-- 표 본문 -->
+            </tbody>
+            <tfoot>
+                <!-- 표 끝 -->
+            </tfoot>
         </table>
 
+        <div>블록(block)형 구획 나눔</div>
+        <span>인라인(inline)형 구획 나눔</span>
+        <!-- 의미없이 사용하기 좋은 태그 -->
+        <form>
+            <label for="number">주민등록번호</label>
+            <input name="text" placeholder="-기호 없이 숫자만 입력해주세요" />
+            <input type="text" value="123456" />
+            <input type="password" />
+
+            <input type="radio" value="1" name="p1" checked/>사과
+            <input type="radio" value="2" name="p1" />배
+            <input type="radio" value="3" name="p1" />딸기
+
+            <input type="checkbox" value="1" checked />빨강
+            <input type="checkbox" value="2" />파랑
+            <input type="checkbox" value="3" />노랑
+
+            <select>
+                <option>네이버</option>
+                <option>구글</option>
+                <option>계원</option>
+            </select>
+            <textarea rows="10" cols="60"> 여러줄의 장문을 작성 </textarea>
 
 
+            <input onclick="alert('버튼눌림'); type="button" value="버튼입니다" />
+            <button>
+                <strong>
+                    <ins>버튼입니다</ins>
+                </strong>
+            </button>
+            <input type="submit" value="제출" />
 
-
+        </form>
 
 
 
