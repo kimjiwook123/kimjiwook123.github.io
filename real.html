@@ -1,29 +1,314 @@
-<!DOCTYPE html>  <!-- 문서타입 html5-->
-<html>  <!-- 시작태그 -->
-    <head>
-        <title>팜하늬의 홈페이지</title>
-        <meta charset="utf-8" />
-        <!-- utf-8, euc-kr -->
-        <meta name="keywords" content="웹퍼블리싱, 계원, html, css" />
-        <link rel="stylesheet" type="text/css" href="real.css" />
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="뉴진스, 소개, html, css" />
+    <link rel="stylesheet" type="text/css" href="real.css" />
+
+ 
+</head>
+
+<body>
+    <header>
+        <strong>
+            <h1 style="text-align: center; font-size: 52px;">NEW JEANS</h1>
+        </strong>
+    <hr />
+    </header>
+    <form>
+        <select>
+            <option></option>
+            <option>남성</option>
+            <option>여성</option>
+        </select>
+        <label for="number">로그인 정보</label>
+        <input type="text" name="id" placeholder="ID" />
+        <input type="password" name="password" placeholder="비밀번호" />
+        <input onclick="alert('버니즈 입니다.');" type="button" value="로그인" />
+         
+    </form>
+    <br>
+    <div>
+    <img src="https://img.sbs.co.kr/newsnet/etv/upload/2023/07/21/30000863435_1280.jpg">
+    </div>
+    <br>
+    <nav>
+        <div class="horizontal-list-container">
+            <ul class="horizontal-list">
+                <li><a href="#minji-section">민지</a></li>
+                <li><a href="#hanni-section">하니</a></li>
+                <li><a href="#da-section">다니엘</a></li>
+                <li><a href="#hin-section-">해린</a></li>
+                <li><a href="#hh-section">혜인</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+        </script>
         
-    </head>
-     <body> <!-- 본문 -->
 
-        <header>
-            <h1 style="text-align: center; font-size: 52px; vertical-align: top; top; font-family: Impact">NEW JEANS</h1>
 
-            <nav>
-                <ul>
-                    <li><a href="#">멤버</a></li>
-                    <li><a href="#">특징</a></li>
-                    <li><a href="#">활동</a></li>
-                    <li><a href="#">직캠</a></li>
+
+    2022년 7월 22일에 데뷔한 ADOR 소속의 5인조 다국적 걸그룹이다.
+
+    <div class="nav-container">
+        <nav>
+            <ul class="button-list">
+                <li><a class="button" href="people.html">멤버</a></li>
+                <li><a class="button" href="sing.html">노래</a></li>
+                <li><a class="button" href="#">느낀점</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <audio controls>
+        <source src="mp3/y2mate.com - NewJeans 뉴진스  OMG Jazz Piano Remix Prod MINDA.mp3" type="audio/mp3">
+    </audio>
+
+    <table>
+        <tr>
+            <th>데뷔일</th>
+            <th>2022년 7월 22일</th>
+        </tr>
+        <tr>
+            <th>장르</th>
+            <td>댄스 팝, 일렉트로팝, 힙합, 저지 클럽</td>
+        </tr>
+        <tr>
+            <th>소속사</th>
+            <td>ADOR</td>
+        </tr>
+        <tr>
+            <th>레이블</th>
+            <td>HYBE LABELS</td>
+        </tr>
+        <tr>
+            <th>팬덤</th>
+            <td>Bunnies</td>
+        </tr>
+        <tr>
+            <th>공식사이트</th>
+            <td><a href="https://newjeans.kr/" target="_blank">https://newjeans.kr/</a></td>
+        </tr>
+    </table>
+    
+    <h1>멤버</h1>
+    <hr />
+
+    <div class="content-container">
+    
+    <section>
+        <div class="content-group">
+            <section id="minji-section"></section>
+            <img src="img/120261_85506_327.jpg" style="margin-left: 80px;">
+            <h1>민지</h1>
+            <table style="margin-left: 580px">
+                <tr>
+                    <th>출생</th>
+                    <th>2004년 5월 7일</th>
+                </tr>
+                <tr>
+                    <th>고향</th>
+                    <td>강원도 춘천시 동면 만천리</td>
+                </tr>
+                <tr>
+                    <th>국적</th>
+                    <td>대한민국</td>
+                </tr>
+                <tr>
+                    <th>신체</th>
+                    <td>169cm</td>
+                </tr>
+                <tr>
+                    <th>MBTI</th>
+                    <td>ENTJ</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <hr />
+    <section>
+        <div class="content-group">
+            <section id="hanni-section"></section>
+            <img src="img/kh_u9UOL2mRZzX3A0lCFxfFcqtgnC1Ed7FvlcWnN3TykKJD-S_ABE3yCDb_UnWc-lfIz-md2MuQ6bTVs019XrQ.webp">
+            <h1>하니</h1>
+            <h2>
+                <table style="margin-left: 550px">
+                    <tr>
+                        <th>출생</th>
+                        <th>2004년 10월 6일</th>
+                    </tr>
+                    <tr>
+                        <th>고향</th>
+                        <td>빅토리아주 멜버른</td>
+                    </tr>
+                    <tr>
+                        <th>국적</th>
+                        <td>호주 베트남</td>
+                    </tr>
+                    <tr>
+                        <th>신체</th>
+                        <td>161.7cm</td>
+                    </tr>
+                    <tr>
+                        <th>MBTI</th>
+                        <td>INFP</td>
+                    </tr>
+                    <tr>
+                        <th>종교</th>
+                        <td>개신교</td>
+                    </tr>
+                </table>
+            </h2>
+        </div>
+    </section>
+    <hr />
+    <section>
+        <div class="content-group">
+            <section id="da-section"></section>
+            <img src="img/DMtB86VNii2bWG4tSiIz7LlrAccZM8VWdPvAdWJIwOZkInPGicoJxh8JWAAt5nIB3wdwqwSOq3Nq2P4bSudDdI3aQNDKAJBvLywn8rISySmWt6oQ7cIi5nQmQ4wsVAqwHxf0QEIM8cPYNqCsUZmkSA.webp">
+            <h1>다니엘</h1>
+            <h2>
+                <table style="margin-left: 550px">
+                    <tr>
+                        <th>출생</th>
+                        <th>2005년 4월 11일</th>
+                    </tr>
+                    <tr>
+                        <th>고향</th>
+                        <td>뉴사우스웨일스 주 뉴캐슬</td>
+                    </tr>
+                    <tr>
+                        <th>국적</th>
+                        <td>호주 대한민국</td>
+                    </tr>
+                    <tr>
+                        <th>신체</th>
+                        <td>165cm</td>
+                    </tr>
+                    <tr>
+                        <th>MBTI</th>
+                        <td>ENFP</td>
+                    </tr>
+                    <tr>
+                        <th>종교</th>
+                        <td>개신교</td>
+                    </tr>
+                </table>
+            </h2>
+        </div>
+    </section>
+    <hr />
+    <section>
+        <div class="content-group">
+            <section id="hin-section"></section>
+            <img src="img/Tnl3lJs-IKjKJZJqg6avPtsqMi5eI5bQLxz79qdlIFqUhDFIR8pEBMxcB5Qw5c75hAlncE4s_A98bZJIMrMgP76V-Oxtvu88EAx-h3wXdWC5N0o83hR0c_nYG8-rlbilN1A8-61tU2oW1bYiTrJTVA.webp">
+            <h1>해린</h1>
+            <h2>
+                <table style="margin-left: 550px">
+                    <tr>
+                        <th>출생</th>
+                        <th>2006년 5월 15일</th>
+                    </tr>
+                    <tr>
+                        <th>고향</th>
+                        <td>서울특별시 동작구 신대방동</td>
+                    </tr>
+                    <tr>
+                        <th>국적</th>
+                        <td>대한민국</td>
+                    </tr>
+                    <tr>
+                        <th>신체</th>
+                        <td>164.5cm</td>
+                    </tr>
+                    <tr>
+                        <th>MBTI</th>
+                        <td>INTJ</td>
+                    </tr>
+                    <tr>
+                        <th>반려동물</th>
+                        <td>반려견 방글<sup>포메라니안</sup></td>
+                    </tr>
+                </table>
+            </h2>
+        </div>
+    </section>
+    <hr />
+    <section>
+        <div class="content-group">
+            <section id="hh-section"></section>
+            <img src="img/0HcPXhSAtuvZk-zXl_BhslclsYLXH82hFZ9971c6f-Prf3PqY1JD7S1G2z1T1ImRTOxgzV7TG_PFXUULMhzb5KeFpQrA2ybXq0hzfFTopyV2in2cHyIRhIb-OgSuVJa9pHoAQ43rNGWItHgpb8KxTw.webp">
+            <h1>혜인</h1>
+            <h2>
+                <table style="margin-left: 550px">
+                    <tr>
+                        <th>출생</th>
+                        <th>2008년 4월 21일</th>
+                    </tr>
+                    <tr>
+                        <th>고향</th>
+                        <td>인천광역시 미추홀구 문학동</td>
+                    </tr>
+                    <tr>
+                        <th>국적</th>
+                        <td>대한민국</td>
+                    </tr>
+                    <tr>
+                        <th>신체</th>
+                        <td>170cm</td>
+                    </tr>
+                    <tr>
+                        <th>MBTI</th>
+                        <td>INFP</td>
+                    </tr>
+                    <tr>
+                        <th>종교</th>
+                        <td>개신교</td>
+                    </tr>
+                </table>
+            </h2>
+        </div>
+    </section>
+
+    <h1>느낀점</h1>
+    <hr />
+
+        <h2>이번 직무수행능력평가를 통해 HTML의 태그와 속성을 제대로 알고 사용하는 것이 중요하다는 것을 알게되었다. 만들면서 시행착오가 많았지만
+            점점생겨나는걸 보면 뿌듯하였다. css를 배우고 나서부터면 더 재밌을것 같다.
+        </h2>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; NewJeans. All rights reserved.</p>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="img/pngwing.com (5).png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="img/pngwing.com (6).png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="img/dff.png" alt="Instagram"></a></li>
+
                 </ul>
-            </nav>
-            <body>
-          
-            <img width= "1500px" height="auto" src="https://img.sbs.co.kr/newsnet/etv/upload/2023/07/21/30000863435_1280.jpg">
-
-        </header>
-    </body>
+            </div>
+        </footer>
+</body>
+</html>
