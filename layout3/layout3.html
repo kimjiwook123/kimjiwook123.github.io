@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout3</title>
+        <meta charset="utf-8" />
+        <style>
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin: 0px auto;
+            }
+            body{
+                background-image: url(back.png);
+            }
+            header h1{
+                font-size: 50px;
+
+            }
+            header ul{
+                display: flex;
+                padding: 0px;
+                list-style: none;
+                font-size: 12px;
+                
+            }
+            header li{
+                padding: 0px 10px;
+                padding-right: 20px;
+            }
+            .short_line{
+                width: 30px;
+                border-top: solid 1px black;
+            }
+            #content{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .content_card{
+                width: 310px;
+                background-color: white;
+                box-shadow: 2px 2px 2px gray;
+                /* 가로위치 세로위치 번짐정도 그림자색상 */
+                margin: 20px;
+            }
+            .category{
+                position: absolute; /*위치지정 : 절대적인*/
+                /* top bottom left right */
+                left: 0px;
+                bottom: 0px;
+                background-color: black;
+                color: white;
+                padding: 5px 15px;
+            }
+            .content_card div:first-child{
+                position: relative;
+                /* relative 부모는 자식의 absolute 자식의 기준이 된다 */
+            }
+            .content_card img{
+                display: block;
+            }
+            .content_card>div:last-child{
+                padding: 50px;
+            }
+            .content_card h2{
+                margin: 0px;
+            }
+            .content_card>div>div:nth-child(2){
+                color: gray;
+            }
+            .long_line{
+                width: 210px;
+                border-top: dotted;
+                margin: 10px 0px;
+            }
+            .content_card p{
+                margin: 0px;
+            }
+            footer ul{
+                display: flex;
+                list-style: none;
+                padding: 0px;
+            }
+            footer li{
+                padding-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1>Gridly.</h1>
+                <div class="short_line"></div>
+                <ul>
+                    <li>home</li>
+                    <li>digital designs</li>
+                    <li>web designs</li>
+                    <li>branding/identity</li>
+                </ul>
+                <div class="short_line"></div>
+            </header>
+            <div id="content">
+                <section class="content_card">
+                    <div>
+                        <img src="c1.png"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="c2.png"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="c3.png"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="c4.png"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="c5.png"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section><section class="content_card">
+                    <div>
+                        <img src="c6.png"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section><section class="content_card">
+                    <div>
+                        <img src="c7.png"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section><section class="content_card">
+                    <div>
+                        <img src="c8.png"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="c9.png"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="c10.png"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="c11.png"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                            abcdefg  abcdefg  abcdefg  abcdefg  abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <div class="short_line"></div>
+                <ul>
+                    <li><img src="f1.png"/></li>
+                    <li><img src="f2.png"/></li>
+                    <li><img src="f3.png"/></li>
+                    <li><img src="f4.png"/></li>
+                </ul>
+                <div class="short_line"></div>
+                <p>copyright</p>
+            </footer>
+        </div>
+
+        
+    </body>
+</html>
