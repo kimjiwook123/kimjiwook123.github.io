@@ -1,0 +1,30 @@
+.main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1920px;
+    height: 3093px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  .img {
+    position: absolute;
+    width: 1920px;
+    height: 3093.035px;
+    top: 0;
+    left: 0;
+    background: url(img2/gaudida.png)
+      no-repeat center;
+    background-size: cover;
+  }
+  body{
+    margin: 0px;
+}
